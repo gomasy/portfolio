@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* content */
+html {
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  font-family: "Exo", sans-serif;
+}
+
+nav {
+  display: none;
+}
+
+#icon {
+  display: none;
+}
+
+#title {
+  display: none;
+}
+
+#container:before {
+  display: block;
+  content: "\f071";
+  font-family: "FontAwesome";
+  font-size: 200px;
+  text-align: center;
+}
+
+#container:after {
+  display: block;
+  content: "Your browser is not supported.";
+  font-size: 30px;
+}
