@@ -4,7 +4,7 @@ portfolio
 My portfolio site  
 [https://gomasy.jp/](https://gomasy.jp/)
 
-##LICENSE
+## LICENSE
 Copyright 2014 Gomasy. All right reserved.
 
 Notices of files:
@@ -25,7 +25,7 @@ Notices of files:
 * /img/icon.png
 
 > Copyright 2013 [@akky1127](https://twitter.com/akky1127)  
-http://seiga.nicovideo.jp/seiga/im3548635
+> http://seiga.nicovideo.jp/seiga/im3548635
 
 * /img/icon2.png
 
