@@ -2,6 +2,7 @@ portfolio
 =========
 
 My portfolio site
+[https://gomasy.jp/](https://gomasy.jp/)
 
 ##LICENSE
 Copyright 2014 Gomasy. All right reserved.
