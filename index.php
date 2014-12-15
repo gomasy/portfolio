@@ -42,5 +42,6 @@
       </nav>
     </div>
     <!-- Copyright 2014 Gomasy. All right reserved. -->
+    <!-- https://github.com/Gomasy/portfolio -->
   </body>
 </html>
