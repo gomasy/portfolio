@@ -5,13 +5,19 @@ My portfolio site
 [https://gomasy.jp/](https://gomasy.jp/)
 
 ## LICENSE
-Copyright 2014 Gomasy. All right reserved.
-
 Notices of files:
+
+* /index.php
+* /ua.php
+* /css/style.css
+
+> Licensed CC BY 3.0  
+> https://creativecommons.org/licenses/by/3.0/
+
 * /css/font-awesome.min.css
 
 > Licensed MIT  
-> http://opensource.org/licenses/mit-license.html
+> http://opensource.org/licenses/mit-license.php
 
 * /fonts/FontAwesome.otf
 * /fonts/fontawesome-webfont.eot
