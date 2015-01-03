@@ -41,7 +41,7 @@
         </div>
       </nav>
     </div>
-    <!-- Copyright 2014-<?php date("Y"); ?> Gomasy. All right reserved. -->
+    <!-- Copyright 2014-<?= date("Y"); ?> Gomasy. All right reserved. -->
     <!-- https://github.com/Gomasy/portfolio -->
   </body>
 </html>
