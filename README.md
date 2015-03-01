@@ -35,4 +35,4 @@ Notices of files:
 
 * /img/icon2.png
 
-> Copyright 2014 [@tetooisi](https://twitter.com/tetooisi)
+> Copyright 2014 [@_tetopi](https://twitter.com/_tetopi)
