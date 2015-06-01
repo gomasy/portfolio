@@ -32,10 +32,9 @@
         <a class="btn" id="btn-skype" href="skype:ktomohiro365" target="_blank">Skype</a>
         <div class="modal-window" id="about">
           <div class="modal-text">
-            <p>なにもできません（ガチ）</p>
-            <p>すきなもの: Arch Linux, Ruby, Ingress<br>
-            きらいなもの: 現実</p>
-            <p>MAIL: <span id="mail-text">echo 'bnlhbkBnb21hc3kuanA=' | base64 -d</span></p>
+            <p>I can't do anything.</p>
+            <p>Like: Arch Linux, C#, Ruby, Ingress<br>
+            <p>MAIL: <span id="mail-text">$ echo 'bnlhbkBnb21hc3kuanA=' | base64 -d</span></p>
           </div>
           <a class="modal-close" href="#">Close</a>
         </div>
