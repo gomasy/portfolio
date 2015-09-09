@@ -6,7 +6,7 @@
     <meta name="description" content="つらい">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gomasy's portfolio</title>
-    <link rel="shortcut icon" href="./img/icon.png">
+    <link rel="shortcut icon" href="./img/favicon.png">
     <?= load_css(); ?>
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
@@ -22,7 +22,7 @@
   </head>
   <body>
     <div id="container">
-      <img id="icon" src="./img/icon.png" alt="">
+      <img id="icon" src="./img/icon.jpg" alt="Password is `flag`.">
       <span id="title">Gomasy</span>
       <nav>
         <a class="btn" id="btn-about" href="#about">About me</a>
