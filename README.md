@@ -28,11 +28,7 @@ Notices of files:
 > Licensed SIL OFL 1.1  
 > http://scripts.sil.org/OFL
 
-* /img/icon.png
+* /img/icon.jpg
 
 > Copyright 2013 [@akky1127](https://twitter.com/akky1127)  
 > http://seiga.nicovideo.jp/seiga/im3548635
-
-* /img/icon2.png
-
-> Copyright 2014 [@_tetopi](https://twitter.com/_tetopi)
