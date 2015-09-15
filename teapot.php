@@ -1,8 +1,7 @@
 <?php
   header("HTTP/1.1 418 I'm a teapot");
-  $ua = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
-?>
-<html>
+  $ua = $_SERVER['HTTP_USER_AGENT'] ?: '';
+?><html>
 <head><title>418 I'm a teapot</title></head>
 <body bgcolor="white">
 <center><h1>418 I'm a teapot</h1></center>
