@@ -1,4 +1,3 @@
-<?php require_once('./ua.php'); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gomasy's portfolio</title>
     <link rel="shortcut icon" href="./img/favicon.png">
-    <?= load_css(); ?>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
     <script>
