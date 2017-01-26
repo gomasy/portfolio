@@ -27,7 +27,7 @@
         <a class="btn" id="btn-about" href="#about">About me</a>
         <a class="btn" id="btn-blog" href="http://blog.gomasy.jp/" target="_blank">Blog</a>
         <a class="btn" id="btn-github" href="https://github.com/Gomasy" target="_blank">GitHub</a>
-        <a class="btn" id="btn-twitter" href="https://twitter.com/u3g3" target="_blank">Twitter</a>
+        <a class="btn" id="btn-twitter" href="https://twitter.com/u597" target="_blank">Twitter</a>
         <a class="btn" id="btn-skype" href="skype:ktomohiro365" target="_blank">Skype</a>
         <div class="modal-window" id="about">
           <div class="modal-text">
