@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="つらい">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gomasy's portfolio</title>
-    <link rel="shortcut icon" href="./img/favicon.png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="つらい">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gomasy's portfolio</title>
+        <link rel="icon" type="image/png" href="./img/favicon.png">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-54951000-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </head>
-  <body>
-    <div id="container">
-      <img id="icon" src="./img/icon.jpg" alt="Password is `flag`.">
-      <span id="title">Gomasy</span>
-      <nav>
-        <a class="btn" id="btn-about" href="#about">About me</a>
-        <a class="btn" id="btn-blog" href="http://blog.gomasy.jp/" target="_blank">Blog</a>
-        <a class="btn" id="btn-github" href="https://github.com/Gomasy" target="_blank">GitHub</a>
-        <a class="btn" id="btn-twitter" href="https://twitter.com/u597" target="_blank">Twitter</a>
-        <a class="btn" id="btn-skype" href="skype:ktomohiro365" target="_blank">Skype</a>
-        <div class="modal-window" id="about">
-          <div class="modal-text">
-            <p>I can't do anything.</p>
-            <p>Like: Arch Linux, Ruby, Ingress<br>
-            <p>MAIL: <span id="mail-text">$ echo 'bnlhbkBnb21hc3kuanA=' | base64 -d</span></p>
-          </div>
-          <a class="modal-close" href="#">Close</a>
+            ga('create', 'UA-54951000-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <img id="icon" src="./img/icon.png">
+            <span id="title">Gomasy</span>
+            <nav>
+                <a class="btn" id="btn-about" href="#about">About me</a>
+                <a class="btn" id="btn-blog" href="http://blog.gomasy.jp/">Blog</a>
+                <a class="btn" id="btn-github" href="https://github.com/Gomasy">GitHub</a>
+                <a class="btn" id="btn-twitter" href="https://twitter.com/u597">Twitter</a>
+                <a class="btn" id="btn-skype" href="skype:ktomohiro365">Skype</a>
+                <div class="modal-window" id="about">
+                    <div class="modal-text">
+                        <p>I can't do anything.</p>
+                        <p>Like: Arch Linux, Ruby, PHP<br>
+                        <p>MAIL: <span id="mail-text">$ echo 'bnlhbkBnb21hc3kuanA=' | base64 -d</span></p>
+                    </div>
+                    <a class="modal-close" href="#">Close</a>
+                </div>
+            </nav>
         </div>
-      </nav>
-    </div>
-    <!-- Copyright 2014-<?= date("Y"); ?> Gomasy. All right reserved. -->
-    <!-- https://github.com/Gomasy/portfolio -->
-  </body>
+    </body>
 </html>
+<!-- Copyright 2014-<?= date("Y"); ?> Gomasy. All right reserved. -->
+<!-- https://github.com/Gomasy/portfolio -->

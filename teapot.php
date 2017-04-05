@@ -1,6 +1,6 @@
 <?php
-  header("HTTP/1.1 418 I'm a teapot");
-  $ua = filter_input(INPUT_SERVER, 'HTTP_USER_AGENT');
+    header("HTTP/1.1 418 I'm a teapot");
+    $ua = filter_input(INPUT_SERVER, 'HTTP_USER_AGENT');
 ?><html>
 <head><title>418 I'm a teapot</title></head>
 <body bgcolor="white">
