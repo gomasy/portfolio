@@ -32,7 +32,7 @@
                 <div class="modal-window" id="about">
                     <div class="modal-text">
                         <p>I can't do anything.</p>
-                        <p>Like: Arch Linux, Ruby, PHP<br>
+                        <p>Like: Arch Linux, Ruby, PHP</p><br>
                         <p>MAIL: <span id="mail-text">$ echo 'bnlhbkBnb21hc3kuanA=' | base64 -d</span></p>
                     </div>
                     <a class="modal-close" href="#">Close</a>
