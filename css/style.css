@@ -139,8 +139,8 @@ nav > a {
 }
 
 #btn-github {
-  background-color: #6d4c41;
-  border-bottom: solid 4px #3e2723;
+  background-color: #a1887f;
+  border-bottom: solid 4px #6d4c41;
   animation: fade-in 0.5s ease-out 1.6s;
   animation-fill-mode: forwards;
   -webkit-animation: fade-in 0.5s ease-out 1.6s;
@@ -149,7 +149,7 @@ nav > a {
 
 #btn-github:active {
   transform: translateY(4px);
-  border-bottom: solid 2px #3e2723;
+  border-bottom: solid 2px #6d4c41;
 }
 
 #btn-github:before {
@@ -161,8 +161,8 @@ nav > a {
 }
 
 #btn-twitter {
-  background-color: #3949ab;
-  border-bottom: solid 4px #1a237e;
+  background-color: #7986cb;
+  border-bottom: solid 4px #3949ab;
   animation: fade-in 0.5s ease-out 1.7s;
   animation-fill-mode: forwards;
   -webkit-animation: fade-in 0.5s ease-out 1.7s;
@@ -171,7 +171,7 @@ nav > a {
 
 #btn-twitter:active {
   transform: translateY(4px);
-  border-bottom: solid 2px #1a237e;
+  border-bottom: solid 2px #3949ab;
 }
 
 #btn-twitter:before {
