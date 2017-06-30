@@ -12,8 +12,8 @@ body {
   vertical-align: middle;
   min-height: 100%;
   margin: 0 auto;
-  background-color: #f4f4f4;
-  font-family: "Exo", sans-serif;
+  background-color: #ecf0f1;
+  font-family: "Overlock", sans-serif;
 }
 
 nav {
@@ -29,10 +29,11 @@ nav > a {
   display: block;
   width: 250px;
   margin: 8px;
-  color: #222;
+  color: #212121;
   font-size: 30px;
   opacity: 0;
-  box-shadow: 1px 1px 2px #999;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #aeaeae;
 }
 
 .modal-window:target {
@@ -87,15 +88,22 @@ nav > a {
 }
 
 #about {
-  background-color: rgba(255, 208, 204, 0.8);
+  background-color: rgba(230, 74, 25, 0.9);
+  font-family: serif;
 }
 
 #btn-about {
-  background-color: #ffbfbb;
+  background-color: #e53935;
+  border-bottom: solid 4px #b71c1c;
   animation: fade-in 0.5s ease-out 1.4s;
   animation-fill-mode: forwards;
   -webkit-animation: fade-in 0.5s ease-out 1.4s;
   -webkit-animation-fill-mode: forwards;
+}
+
+#btn-about:active {
+  transform: translateY(4px);
+  border-bottom: solid 2px #b71c1c;
 }
 
 #btn-about:before {
@@ -107,11 +115,17 @@ nav > a {
 }
 
 #btn-blog {
-  background-color: #cbffd3;
+  background-color: #7cb342;
+  border-bottom: solid 4px #558b2f;
   animation: fade-in 0.5s ease-out 1.5s;
   animation-fill-mode: forwards;
   -webkit-animation: fade-in 0.5s ease-out 1.5s;
   -webkit-animation-fill-mode: forwards;
+}
+
+#btn-blog:active {
+  transform: translateY(4px);
+  border-bottom: solid 2px #558b2f;
 }
 
 #btn-blog:before {
@@ -123,11 +137,17 @@ nav > a {
 }
 
 #btn-github {
-  background-color: #deb887;
+  background-color: #6d4c41;
+  border-bottom: solid 4px #3e2723;
   animation: fade-in 0.5s ease-out 1.6s;
   animation-fill-mode: forwards;
   -webkit-animation: fade-in 0.5s ease-out 1.6s;
   -webkit-animation-fill-mode: forwards;
+}
+
+#btn-github:active {
+  transform: translateY(4px);
+  border-bottom: solid 2px #3e2723;
 }
 
 #btn-github:before {
@@ -139,11 +159,17 @@ nav > a {
 }
 
 #btn-twitter {
-  background-color: #8eb8ff;
+  background-color: #3949ab;
+  border-bottom: solid 4px #1a237e;
   animation: fade-in 0.5s ease-out 1.7s;
   animation-fill-mode: forwards;
   -webkit-animation: fade-in 0.5s ease-out 1.7s;
   -webkit-animation-fill-mode: forwards;
+}
+
+#btn-twitter:active {
+  transform: translateY(4px);
+  border-bottom: solid 2px #1a237e;
 }
 
 #btn-twitter:before {
@@ -155,11 +181,17 @@ nav > a {
 }
 
 #btn-skype {
-  background-color: #8ef1ff;
+  background-color: #039be5;
+  border-bottom: solid 4px #0277bd;
   animation: fade-in 0.5s ease-out 1.8s;
   animation-fill-mode: forwards;
   -webkit-animation: fade-in 0.5s ease-out 1.8s;
   -webkit-animation-fill-mode: forwards;
+}
+
+#btn-skype:active {
+  transform: translateY(4px);
+  border-bottom: solid 2px #0227bd;
 }
 
 #btn-skype:before {
@@ -230,9 +262,10 @@ nav > a {
     width: 450px;
     height: 250px;
     z-index: 20;
-    border: solid;
     opacity: 0;
     box-shadow: 0px 0px 5px #999;
+    border: solid;
+    border-radius: 6px;
   }
 
   .modal-close {
@@ -251,9 +284,10 @@ nav > a {
     width: 325px;
     height: 250px;
     z-index: 20;
-    border: solid;
     opacity: 0;
     box-shadow: 0px 0px 10px #999;
+    border: solid;
+    border-radius: 6px;
   }
 
   .modal-close {
@@ -274,9 +308,10 @@ nav > a {
     width: 280px;
     height: 275px;
     z-index: 20;
-    border: solid;
     opacity: 0;
     box-shadow: 0px 0px 10px #999;
+    border: solid;
+    border-radius: 6px;
   }
 
   .modal-close {

@@ -8,7 +8,7 @@
         <link rel="icon" type="image/png" href="./img/favicon.png">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overlock">
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,8 +31,8 @@
                 <a class="btn" id="btn-skype" href="skype:ktomohiro365">Skype</a>
                 <div class="modal-window" id="about">
                     <div class="modal-text">
-                        <p>I can't do anything.</p>
-                        <p>Like: Arch Linux, Ruby, PHP</p><br>
+                        <p>I can't do anything.<br>
+                        Like: Arch Linux, Ruby, PHP</p><br>
                         <p>MAIL: <span id="mail-text">$ echo 'bnlhbkBnb21hc3kuanA=' | base64 -d</span></p>
                     </div>
                     <a class="modal-close" href="#">Close</a>
