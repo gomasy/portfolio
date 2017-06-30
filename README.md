@@ -8,7 +8,7 @@ My portfolio site
 Notices of files:
 
 * /index.php
-* /ua.php
+* /teapot.php
 * /css/style.css
 
 > Licensed CC BY 3.0  
