@@ -21,7 +21,7 @@
     </head>
     <body>
         <div id="container">
-            <img id="icon" src="./img/icon.png">
+            <img id="icon" src="./img/icon.jpg">
             <span id="title">Gomasy</span>
             <nav>
                 <a class="btn" id="btn-about" href="#about">About me</a>

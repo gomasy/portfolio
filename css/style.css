@@ -65,6 +65,8 @@ nav > a {
   height: 250px;
   top: 100px;
   opacity: 0;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
   animation: rotate 2s ease 0.2s;
   animation-fill-mode: forwards;
   -webkit-animation: rotate 2s ease 0.2s;
