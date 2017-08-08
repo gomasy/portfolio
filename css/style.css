@@ -18,7 +18,6 @@ body {
 
 nav {
   position: relative;
-  top: 5px;
 }
 
 nav > a {
@@ -26,6 +25,7 @@ nav > a {
 }
 
 .btn {
+  position: absolute;
   display: block;
   width: 250px;
   margin: 8px;
@@ -55,6 +55,8 @@ nav > a {
 }
 
 #container {
+  position: relative;
+  top: -130px;
   text-align: center;
 }
 
@@ -95,6 +97,7 @@ nav > a {
 }
 
 #btn-about {
+  top: 0px;
   background-color: #e53935;
   border-bottom: solid 4px #b71c1c;
   animation: fade-in 0.5s ease-out 1.4s;
@@ -117,6 +120,7 @@ nav > a {
 }
 
 #btn-blog {
+  top: 48px;
   background-color: #7cb342;
   border-bottom: solid 4px #558b2f;
   animation: fade-in 0.5s ease-out 1.5s;
@@ -139,6 +143,7 @@ nav > a {
 }
 
 #btn-github {
+  top: 96px;
   background-color: #a1887f;
   border-bottom: solid 4px #6d4c41;
   animation: fade-in 0.5s ease-out 1.6s;
@@ -161,6 +166,7 @@ nav > a {
 }
 
 #btn-twitter {
+  top: 144px;
   background-color: #7986cb;
   border-bottom: solid 4px #3949ab;
   animation: fade-in 0.5s ease-out 1.7s;
@@ -183,6 +189,7 @@ nav > a {
 }
 
 #btn-skype {
+  top: 192px;
   background-color: #039be5;
   border-bottom: solid 4px #0277bd;
   animation: fade-in 0.5s ease-out 1.8s;
