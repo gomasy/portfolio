@@ -36,7 +36,7 @@
                         <p>MAIL: <span id="hl-text">$ echo 'bnlhbkBnb21hc3kuanA=' | base64 -d</span><br>
                         PGP Key: <span id="hl-text">02BE 7F39 D978 AC7E</span></p>
                     </div>
-                    <a class="modal-close" href="#">Close</a>
+                    <a class="modal-close" href="#">[Close]</a>
                 </div>
             </nav>
         </div>

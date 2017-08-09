@@ -49,11 +49,6 @@ nav > a {
   text-align: left;
 }
 
-.modal-close:before {
-  content: "\f05c";
-  font-family: "FontAwesome";
-}
-
 #container {
   position: relative;
   top: -130px;
