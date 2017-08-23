@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="つらい">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Gomasy's portfolio</title>
         <link rel="icon" type="image/png" href="./img/favicon.png">
