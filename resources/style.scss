@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-@import url('./font-awesome.min.css');
 @import url('//fonts.googleapis.com/css?family=Overlock');
 
 /* content */
@@ -22,10 +21,10 @@ body {
 nav {
     position: relative;
     left: -5px;
-}
 
-nav > a {
-    text-decoration: none;
+    a {
+        text-decoration: none;
+    }
 }
 
 .btn {
