@@ -4,8 +4,8 @@ const path = require('path');
 module.exports = {
     entry: './app.js',
     output: {
-        filename: './app.js',
-        path: path.join(__dirname, '/assets'),
+        filename: './assets/bundle.js',
+        path: path.join(__dirname, '/'),
     },
     module: {
         rules: [
