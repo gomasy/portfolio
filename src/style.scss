@@ -44,11 +44,6 @@
             animation-fill-mode: forwards;
         }
     }
-
-    .modal-close {
-        color: #222;
-        text-decoration: none;
-    }
 }
 
 html {
@@ -90,6 +85,11 @@ nav {
 .modal-text {
     padding: 20px;
     text-align: left;
+}
+
+.modal-close {
+    color: #222;
+    text-decoration: none;
 }
 
 #container {
