@@ -14,7 +14,7 @@ module.exports = {
                 use: [ 'style-loader', 'css-loader', 'sass-loader' ],
             },
             {
-                test: /\.(woff2?|ttf|eot|svg|jpg|png)(\?v=[\d.]+|\?[\s\S]+)?$/,
+                test: /\.(woff2?|ttf|eot|svg|jpg)(\?v=[\d.]+|\?[\s\S]+)?$/,
                 use: [
                     { loader: 'file-loader?name=/assets/[name].[ext]' },
                 ],
@@ -22,8 +22,6 @@ module.exports = {
         ],
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            comments: false,
-        }),
+        new webpack.optimize.UglifyJsPlugin(),
     ],
 }
