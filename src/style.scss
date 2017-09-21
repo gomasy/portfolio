@@ -1,8 +1,56 @@
 @charset "utf-8";
-
 @import url('//fonts.googleapis.com/css?family=Overlock');
 
 /* content */
+@mixin button($top, $bg-color, $bd-color, $fade-sec, $icon, $icon-offset) {
+    top: $top;
+    background-color: $bg-color;
+    border-bottom: solid 4px $bd-color;
+    animation: fade-in 0.5s ease-out $fade-sec;
+    animation-fill-mode: forwards;
+
+    &:active {
+        transform: translateY(4px);
+        border-bottom: solid 2px $bd-color;
+    }
+
+    &:before {
+        position: absolute;
+        top: 5px;
+        left: $icon-offset;
+        content: $icon;
+        font-family: "FontAwesome";
+    }
+}
+
+@mixin modal-window($margin-left, $width, $height) {
+    .modal-window {
+        position: absolute;
+        display: none;
+        top: -20px;
+        left: 50%;
+        margin-left: $margin-left;
+        width: $width;
+        height: $height;
+        z-index: 20;
+        opacity: 0;
+        box-shadow: 0px 0px 10px #999;
+        border: solid;
+        border-radius: 6px;
+
+        &:target {
+            display: block;
+            animation: fade-in 0.5s ease-out;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    .modal-close {
+        color: #222;
+        text-decoration: none;
+    }
+}
+
 html {
     display: table;
     height: 100%;
@@ -39,14 +87,6 @@ nav {
     box-shadow: 0 0 3px #aeaeae;
 }
 
-.modal-window:target {
-    display: block;
-    animation: fade-in 0.5s ease-out;
-    animation-fill-mode: forwards;
-    -webkit-animation: fade-in 0.5s ease-out;
-    -webkit-animation-fill-mode: forwards;
-}
-
 .modal-text {
     padding: 20px;
     text-align: left;
@@ -70,8 +110,6 @@ nav {
     border-radius: 50%;
     animation: rotate 2s ease 0.2s;
     animation-fill-mode: forwards;
-    -webkit-animation: rotate 2s ease 0.2s;
-    -webkit-animation-fill-mode: forwards;
 }
 
 #title {
@@ -82,8 +120,6 @@ nav {
     opacity: 0;
     animation: fade-in 1s ease 1.2s;
     animation-fill-mode: forwards;
-    -webkit-animation: fade-in 1s ease 1.2s;
-    -webkit-animation-fill-mode: forwards;
 }
 
 #hl-text {
@@ -92,122 +128,27 @@ nav {
 
 #about {
     background-color: rgba(230, 74, 25, 0.9);
-    font-family: serif;
+    font-family: sans-serif;
 }
 
 #btn-about {
-    top: 0px;
-    background-color: #e53935;
-    border-bottom: solid 4px #b71c1c;
-    animation: fade-in 0.5s ease-out 1.4s;
-    animation-fill-mode: forwards;
-    -webkit-animation: fade-in 0.5s ease-out 1.4s;
-    -webkit-animation-fill-mode: forwards;
-}
-
-#btn-about:active {
-    transform: translateY(4px);
-    border-bottom: solid 2px #b71c1c;
-}
-
-#btn-about:before {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    content: "\f007";
-    font-family: "FontAwesome";
+    @include button(0px, #e53935, #b71c1c, 1.4s, "\f007", 10px);
 }
 
 #btn-blog {
-    top: 48px;
-    background-color: #7cb342;
-    border-bottom: solid 4px #558b2f;
-    animation: fade-in 0.5s ease-out 1.5s;
-    animation-fill-mode: forwards;
-    -webkit-animation: fade-in 0.5s ease-out 1.5s;
-    -webkit-animation-fill-mode: forwards;
-}
-
-#btn-blog:active {
-    transform: translateY(4px);
-    border-bottom: solid 2px #558b2f;
-}
-
-#btn-blog:before {
-    position: absolute;
-    top: 5px;
-    left: 7px;
-    content: "\f19a";
-    font-family: "FontAwesome";
+    @include button(48px, #7cb342, #558b2f, 1.5s, "\f19a", 7px);
 }
 
 #btn-github {
-    top: 96px;
-    background-color: #a1887f;
-    border-bottom: solid 4px #6d4c41;
-    animation: fade-in 0.5s ease-out 1.6s;
-    animation-fill-mode: forwards;
-    -webkit-animation: fade-in 0.5s ease-out 1.6s;
-    -webkit-animation-fill-mode: forwards;
-}
-
-#btn-github:active {
-    transform: translateY(4px);
-    border-bottom: solid 2px #6d4c41;
-}
-
-#btn-github:before {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    content: "\f09b";
-    font-family: "FontAwesome";
+    @include button(96px, #a1887f, #6d4c41, 1.6s, "\f09b", 10px);
 }
 
 #btn-twitter {
-    top: 144px;
-    background-color: #7986cb;
-    border-bottom: solid 4px #3949ab;
-    animation: fade-in 0.5s ease-out 1.7s;
-    animation-fill-mode: forwards;
-    -webkit-animation: fade-in 0.5s ease-out 1.7s;
-    -webkit-animation-fill-mode: forwards;
-}
-
-#btn-twitter:active {
-    transform: translateY(4px);
-    border-bottom: solid 2px #3949ab;
-}
-
-#btn-twitter:before {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    content: "\f099";
-    font-family: "FontAwesome";
+    @include button(144px, #7986cb, #3949ab, 1.7s, "\f099", 10px);
 }
 
 #btn-skype {
-    top: 192px;
-    background-color: #039be5;
-    border-bottom: solid 4px #0277bd;
-    animation: fade-in 0.5s ease-out 1.8s;
-    animation-fill-mode: forwards;
-    -webkit-animation: fade-in 0.5s ease-out 1.8s;
-    -webkit-animation-fill-mode: forwards;
-}
-
-#btn-skype:active {
-    transform: translateY(4px);
-    border-bottom: solid 2px #0227bd;
-}
-
-#btn-skype:before {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    content: "\f17e";
-    font-family: "FontAwesome";
+    @include button(192px, #039be5, #0277bd, 1.8s, "\f17e", 10px);
 }
 
 /* animation */
@@ -215,7 +156,6 @@ nav {
     100% {
         opacity: 1;
         transform: translate(0, 20px);
-        -webkit-transform: translate(0, 20px);
     }
 }
 
@@ -226,106 +166,23 @@ nav {
     50% {
         opacity: 1;
         transform: translate(0, 0) rotateY(360deg);
-        -webkit-transform: translate(0, 0) rotateY(360deg);
     }
     100% {
         opacity: 1;
         transform: translate(0, -100px);
-        -webkit-transform: translate(0, -100px);
     }
 }
 
-@-webkit-keyframes fade-in {
-    100% {
-        opacity: 1;
-        transform: translate(0, 20px);
-        -webkit-transform: translate(0, 20px);
-    }
-}
-
-@-webkit-keyframes rotate {
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-        transform: translate(0, 0) rotateY(360deg);
-        -webkit-transform: translate(0, 0) rotateY(360deg);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0, -100px);
-        -webkit-transform: translate(0, -100px);
-    }
-}
 
 /* media query */
 @media screen and (min-width: 481px) {
-    .modal-window {
-        position: absolute;
-        display: none;
-        top: -20px;
-        left: 50%;
-        margin-left: -225px;
-        width: 450px;
-        height: 250px;
-        z-index: 20;
-        opacity: 0;
-        box-shadow: 0px 0px 5px #999;
-        border: solid;
-        border-radius: 6px;
-    }
-
-    .modal-close {
-        color: #222;
-        text-decoration: none;
-    }
+    @include modal-window(-225px, 450px, 250px);
 }
 
 @media screen and (max-width: 480px) {
-    .modal-window {
-        position: absolute;
-        display: none;
-        top: -20px;
-        left: 50%;
-        margin-left: -165px;
-        width: 325px;
-        height: 250px;
-        z-index: 20;
-        opacity: 0;
-        box-shadow: 0px 0px 10px #999;
-        border: solid;
-        border-radius: 6px;
-    }
-
-    .modal-close {
-        position: relative;
-        top: -20px;
-        color: #222;
-        text-decoration: none;
-    }
+    @include modal-window(-165px, 325px, 250px);
 }
 
 @media screen and (max-width: 320px) {
-    .modal-window {
-        position: absolute;
-        display: none;
-        top: -20px;
-        left: 50%;
-        margin-left: -145px;
-        width: 280px;
-        height: 275px;
-        z-index: 20;
-        opacity: 0;
-        box-shadow: 0px 0px 10px #999;
-        border: solid;
-        border-radius: 6px;
-    }
-
-    .modal-close {
-        position: relative;
-        top: -20px;
-        color: #222;
-        text-decoration: none;
-    }
+    @include modal-window(-145px, 280px, 275px);
 }
