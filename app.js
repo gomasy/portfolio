@@ -1,7 +1,7 @@
 require('font-awesome/scss/font-awesome.scss');
-require('./resources/style.scss');
-require('./resources/icon.jpg');
-require('./resources/favicon.png');
+require('./src/style.scss');
+require('./src/icon.jpg');
+require('./src/favicon.png');
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
