@@ -2,11 +2,11 @@
 @import url('//fonts.googleapis.com/css?family=Overlock');
 
 /* content */
-@mixin button($top, $bg-color, $bd-color, $fade-sec, $icon, $icon-offset) {
+@mixin button($top, $bg-color, $bd-color, $offset-sec, $icon, $icon-offset) {
     top: $top;
     background-color: $bg-color;
     border-bottom: solid 4px $bd-color;
-    animation: fade-in 0.5s ease-out $fade-sec;
+    animation: fade-in 0.5s ease-out $offset-sec;
     animation-fill-mode: forwards;
 
     &:active {
