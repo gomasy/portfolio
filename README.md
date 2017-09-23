@@ -14,6 +14,7 @@ Notices of files:
 > Licensed CC BY 3.0  
 > https://creativecommons.org/licenses/by/3.0/
 
+* /favicon.ico
 * /src/icon.jpg
 
 > Copyright 2013 [@akky1127](https://twitter.com/akky1127)  
