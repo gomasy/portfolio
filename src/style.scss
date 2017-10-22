@@ -91,6 +91,10 @@ nav {
     text-decoration: none;
 }
 
+.hl-text {
+    background-color: Highlight;
+}
+
 #container {
     position: relative;
     top: -130px;
@@ -119,10 +123,6 @@ nav {
     opacity: 0;
     animation: fade-in 1s ease 1.2s;
     animation-fill-mode: forwards;
-}
-
-#hl-text {
-    background-color: Highlight;
 }
 
 #about {
