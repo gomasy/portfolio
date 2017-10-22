@@ -1,17 +1,22 @@
-<!DOCTYPE html>
+<?php
+$title = "Gomasy's portfolio";
+$url = 'https://gomasy.jp/';
+$description = 'ごましぃのポートフォリオサイトです。目ぼしいものは何もないですよ、はい。';
+
+?><!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#2c3e50">
-        <meta name="description" content="ごましぃのポートフォリオサイトです。何も目ぼしいものは無いですよ、はい。">
+        <meta name="description" content="<?= $description ?>">
         <!-- Social meta -->
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Gomasy's portfolio">
-        <meta property="og:url" content="https://gomasy.jp/">
-        <meta property="og:description" content="ごましぃのポートフォリオサイトです。何も目ぼしいものは無いですよ、はい。">
-        <meta property="og:image" content="https://gomasy.jp/assets/icon.jpg">
-        <meta property="og:site_name" content="Gomasy's portfolio">
+        <meta property="og:title" content="<?= $title ?>">
+        <meta property="og:url" content="<?= $url ?>">
+        <meta property="og:description" content="<?= $description ?>">
+        <meta property="og:image" content="<?= $url ?>icon.jpg">
+        <meta property="og:site_name" content="<?= $title ?>">
         <!-- End of social meta -->
         <title>Gomasy's portfolio</title>
         <script src="./assets/bundle.js"></script>
