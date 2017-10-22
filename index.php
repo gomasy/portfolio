@@ -44,5 +44,5 @@ $description = 'ごましぃのポートフォリオサイトです。目ぼし�
         </div>
     </body>
 </html>
-<!-- Copyright 2014-2017 Gomasy. -->
+<!-- Copyright 2014-<?= date('Y'); ?> Gomasy. -->
 <!-- https://github.com/Gomasy/portfolio -->
