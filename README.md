@@ -7,7 +7,7 @@ My portfolio site
 ## LICENSE
 Notices of files:
 
-* /index.html
+* /index.php
 * /teapot.php
 * /src/style.scss
 
