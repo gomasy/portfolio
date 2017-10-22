@@ -1,6 +1,6 @@
 <?php
 $title = "Gomasy's portfolio";
-$url = 'https://gomasy.jp/';
+$url = 'https://gomasy.jp';
 $description = 'ごましぃのポートフォリオサイトです。目ぼしいものは何もないですよ、はい。';
 
 ?><!DOCTYPE html>
@@ -15,7 +15,7 @@ $description = 'ごましぃのポートフォリオサイトです。目ぼし�
         <meta property="og:title" content="<?= $title ?>">
         <meta property="og:url" content="<?= $url ?>">
         <meta property="og:description" content="<?= $description ?>">
-        <meta property="og:image" content="<?= $url ?>icon.jpg">
+        <meta property="og:image" content="<?= $url ?>/assets/icon.jpg">
         <meta property="og:site_name" content="<?= $title ?>">
         <!-- End of social meta -->
         <title>Gomasy's portfolio</title>
