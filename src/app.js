@@ -1,5 +1,5 @@
-require('font-awesome/scss/font-awesome.scss');
-require('./style.scss');
+import 'font-awesome/scss/font-awesome.scss';
+import './style.scss';
 
 /* Global site tag (gtag.js) - Google Analytics */
 var trackingId = 'UA-54951000-1';
