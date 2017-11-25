@@ -2,12 +2,17 @@
 @import url(//fonts.googleapis.com/css?family=Overlock);
 
 /* content */
-@mixin button($top, $bg-color, $bd-color, $offset-sec, $icon, $icon-offset) {
+@mixin button($top, $bg-color, $bd-color, $hl-color, $hl-bd-color, $offset-sec, $icon, $icon-offset) {
     top: $top;
     background-color: $bg-color;
     border-bottom: solid 4px $bd-color;
     animation: fade-in 0.5s ease-out $offset-sec;
     animation-fill-mode: forwards;
+
+    &:hover {
+        background-color: $hl-color;
+        border-bottom: solid 4px $hl-bd-color;
+    }
 
     &:active {
         transform: translateY(4px);
@@ -131,23 +136,23 @@ nav {
 }
 
 #btn-about {
-    @include button(0px, #e53935, #b71c1c, 1.4s, "\f007", 10px);
+    @include button(0px, #e53935, #b71c1c, #ea605d, #c54949, 1.4s, "\f007", 10px);
 }
 
 #btn-blog {
-    @include button(48px, #7cb342, #558b2f, 1.5s, "\f19a", 7px);
+    @include button(48px, #7cb342, #558b2f, #96c267, #76a258, 1.5s, "\f19a", 7px);
 }
 
 #btn-github {
-    @include button(96px, #a1887f, #6d4c41, 1.6s, "\f09b", 10px);
+    @include button(96px, #a1887f, #6d4c41, #b39f98, #8a6f66, 1.6s, "\f09b", 10px);
 }
 
 #btn-twitter {
-    @include button(144px, #7986cb, #3949ab, 1.7s, "\f099", 10px);
+    @include button(144px, #7986cb, #3949ab, #939ed5, #606dbb, 1.7s, "\f099", 10px);
 }
 
 #btn-skype {
-    @include button(192px, #039be5, #0277bd, 1.8s, "\f17e", 10px);
+    @include button(192px, #039be5, #0277bd, #35afea, #3492ca, 1.8s, "\f17e", 10px);
 }
 
 /* animation */
