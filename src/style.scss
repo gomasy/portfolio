@@ -1,4 +1,9 @@
 @charset "utf-8";
+
+@import "../node_modules/font-awesome/scss/variables";
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/path";
+
 @import url(//fonts.googleapis.com/css?family=Overlock);
 
 /* content */

@@ -1,4 +1,3 @@
-import 'font-awesome/scss/font-awesome.scss';
 import './style.scss';
 
 /* Global site tag (gtag.js) - Google Analytics */
