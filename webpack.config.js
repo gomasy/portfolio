@@ -21,7 +21,7 @@ module.exports = {
                 use: [ 'style-loader', 'css-loader', 'sass-loader' ],
             },
             {
-                test: /\.(woff2?|ttf|eot|svg|jpg)(\?v=[\d.]+|\?[\s\S]+)?$/,
+                test: /\.(woff2?|ttf|eot|svg|ico|jpg)(\?v=[\d.]+|\?[\s\S]+)?$/,
                 use: [
                     { loader: 'file-loader?name=[name].[ext]' },
                 ],
