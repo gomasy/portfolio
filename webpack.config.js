@@ -1,12 +1,21 @@
+const path = require('path');
 const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/app.js',
+    entry: './src/index.js',
     output: {
-        filename: './assets/bundle.js',
+        path: path.join(__dirname, '/public'),
+        filename: 'bundle.js',
     },
     module: {
         rules: [
+            {
+                test: /\.js$/,
+                use: [ 'babel-loader' ],
+                exclude: /node_modules/,
+            },
             {
                 test: /\.scss$/,
                 use: [ 'style-loader', 'css-loader', 'sass-loader' ],
@@ -14,12 +23,18 @@ module.exports = {
             {
                 test: /\.(woff2?|ttf|eot|svg|jpg)(\?v=[\d.]+|\?[\s\S]+)?$/,
                 use: [
-                    { loader: 'file-loader?name=/assets/[name].[ext]' },
+                    { loader: 'file-loader?name=[name].[ext]' },
                 ],
             },
         ],
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin(),
+        new CleanWebpackPlugin([
+            path.join(__dirname, '/public/*'),
+        ]),
+        new HtmlWebpackPlugin({
+            title: "Gomasy's portfolio",
+            filename: 'index.html',
+        }),
     ],
 }
