@@ -37,7 +37,7 @@ module.exports = {
         ]),
         new HtmlWebpackPlugin({
             title: "Gomasy's portfolio",
-            filename: 'index.html',
+            hash: true,
         }),
     ],
 }
