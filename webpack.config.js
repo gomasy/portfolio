@@ -29,6 +29,9 @@ module.exports = {
         ],
     },
     plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            comments: false,
+        }),
         new CleanWebpackPlugin([
             path.join(__dirname, '/public/*'),
         ]),
