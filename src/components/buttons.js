@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
 
-const buttonItems = [
-    { id: 'about', name: 'About', src: '#about' },
-    { id: 'blog', name: 'Blog', src: 'https://blog.gomasy.jp/' },
-    { id: 'github', name: 'GitHub', src: 'https://github.com/Gomasy' },
-    { id: 'twitter', name: 'Twitter', src: 'https://twitter.com/u597' },
-    { id: 'skype', name: 'Skype', src: 'skype:ktomohiro365' },
+const items = [
+    { id: 'about', name: 'About', href: '#about' },
+    { id: 'blog', name: 'Blog', href: 'https://blog.gomasy.jp/' },
+    { id: 'github', name: 'GitHub', href: 'https://github.com/Gomasy' },
+    { id: 'twitter', name: 'Twitter', href: 'https://twitter.com/u597' },
+    { id: 'skype', name: 'Skype', href: 'skype:ktomohiro365' },
 ];
 
 export default class Buttons extends Component {
     render() {
-        const items = [];
-        for (let i = 0; i < buttonItems.length; i++) {
-            items.push(
-                <a className="btn" id={'btn-' + buttonItems[i]['id']} href={buttonItems[i]['src']}>{buttonItems[i]['name']}</a>
+        const buttonItems = [];
+        for (let i = 0; i < items.length; i++) {
+            buttonItems.push(
+                <a className="btn" id={'btn-' + items[i]['id']} href={items[i]['href']}>{items[i]['name']}</a>
             );
         }
 
         return (
             <div id="buttons">
-                {items}
+                {buttonItems}
             </div>
         );
     }
