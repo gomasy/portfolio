@@ -35,7 +35,7 @@ $fa-font-path: "../../node_modules/font-awesome/fonts";
 }
 
 @mixin modal-window($margin-left, $width, $height) {
-    .modal-window {
+    div.modal-window {
         position: absolute;
         display: none;
         left: 50%;
