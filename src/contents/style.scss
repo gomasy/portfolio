@@ -26,11 +26,8 @@ $fa-font-path: "../../node_modules/font-awesome/fonts";
     }
 
     &:before {
-        position: absolute;
-        top: 5px;
         left: $icon-offset;
         content: $icon;
-        font-family: "FontAwesome";
     }
 }
 
@@ -77,6 +74,12 @@ a.btn {
     font-size: 30px;
     opacity: 0;
     border-radius: 3px;
+
+    &:before {
+        position: absolute;
+        top: 5px;
+        font-family: "FontAwesome";
+    }
 }
 
 div.modal-text {
