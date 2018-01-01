@@ -35,7 +35,7 @@ const ModalWindow = ({ id, contents }) => (
 
 const contents = (
     <div class="modal-text">
-        <p>I can't do anything.<br />
+        <p>なにもできません。<br />
         Like: Arch Linux, Ruby, PHP, Vim</p>
         <p>Mail: <span className="hl-text">$ echo 'bnlhbkBnb21hc3kuanA=' | base64 -d</span><br />
         PGP Key: <span class="hl-text">02BE 7F39 D978 AC7E</span></p>
