@@ -11,8 +11,8 @@ meta.name = 'viewport';
 meta.content = 'width=device-width, initial-scale=1';
 document.head.appendChild(meta);
 
-const root = document.createElement('div');
-root.id = 'app';
-document.body.appendChild(root);
+const div = document.createElement('div');
+div.id = 'app';
+document.body.appendChild(div);
 
 app(state, null, view, document.getElementById('app'));
