@@ -8,7 +8,6 @@ My portfolio site
 Notices of files:
 
 * /src/app.js
-* /src/gtag.js
 * /src/index.js
 * /src/contents/style.scss
 
