@@ -1,6 +1,6 @@
+import gaTrack from 'ganalytics';
 import { app } from 'hyperapp';
 import { state, view } from './app';
-import './gtag';
 
 // contents
 import './contents/style.scss';
@@ -14,5 +14,9 @@ document.head.appendChild(meta);
 const div = document.createElement('div');
 div.id = 'app';
 document.body.appendChild(div);
+
+// google analytics
+const ga = new gaTrack('UA-54951000-1');
+ga.send('pageview');
 
 app(state, null, view, document.getElementById('app'));

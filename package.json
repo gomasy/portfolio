@@ -19,6 +19,7 @@
         "css-loader": "^0.28.7",
         "file-loader": "^1.1.6",
         "font-awesome": "^4.7.0",
+        "ganalytics": "^2.0.1",
         "html-webpack-plugin": "^2.30.1",
         "hyperapp": "^1.0.1",
         "node-sass": "^4.7.2",
