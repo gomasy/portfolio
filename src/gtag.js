@@ -8,7 +8,7 @@ const s = document.getElementsByTagName('script')[0];
 s.parentNode.insertBefore(ga, s);
 
 window.dataLayer = window.dataLayer || [];
-gtag => { dataLayer.push(arguments); }
+function gtag() { dataLayer.push(arguments); }
 
 gtag('js', new Date());
 gtag('config', trackingId);
