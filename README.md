@@ -7,11 +7,9 @@ My portfolio site
 ## LICENSE
 Notices of files:
 
+* /src/app.js
+* /src/gtag.js
 * /src/index.js
-* /src/components/app.js
-* /src/components/buttons.js
-* /src/components/icon.js
-* /src/components/modal-window.js
 * /src/contents/style.scss
 
 > Licensed CC BY 3.0  
