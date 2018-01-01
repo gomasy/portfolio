@@ -1,4 +1,4 @@
-import { h, app } from 'hyperapp';
+import { h } from 'hyperapp';
 
 const Profile = ({ icon, name }) => (
     <div id="profile">

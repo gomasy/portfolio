@@ -1,4 +1,4 @@
-import { h, app } from 'hyperapp';
+import { app } from 'hyperapp';
 import { state, view } from './app';
 import './gtag';
 
