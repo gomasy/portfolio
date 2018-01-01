@@ -1,41 +1,45 @@
 import { h, app } from 'hyperapp';
 
 const Profile = ({ icon, name }) => (
-    <profile>
+    <div id="profile">
         <img id="icon" src={icon} />
         <span id="name">{name}</span>
-    </profile>
+    </div>
 );
 
 const Buttons = ({ items }) => {
     const buttonItems = [];
     for (let i = 0; i < items.length; i++) {
+        const id = 'btn-' + items[i]['id'];
+        const name = items[i]['name'];
+        const href = items[i]['href'];
+
         buttonItems.push(
-            <a class="btn" id={'btn-' + items[i]['id']} href={items[i]['href']}>{items[i]['name']}</a>
+            <a class="btn" id={id} href={href}>{name}</a>
         );
     }
 
     return (
-        <buttons>
+        <div id="buttons">
             {buttonItems}
-        </buttons>
+        </div>
     );
 };
 
-const ModalWindow = ({ contents }) => (
-    <modal-window>
+const ModalWindow = ({ id, contents }) => (
+    <div class="modal-window" id={id}>
         {contents}
         <a class="modal-close" href="#">[Close]</a>
-    </modal-window>
+    </div>
 );
 
 const contents = (
-    <modal-text>
+    <div class="modal-text">
         <p>I can't do anything.<br />
         Like: Arch Linux, Ruby, PHP, Vim</p>
         <p>Mail: <span className="hl-text">$ echo 'bnlhbkBnb21hc3kuanA=' | base64 -d</span><br />
         PGP Key: <span class="hl-text">02BE 7F39 D978 AC7E</span></p>
-    </modal-text>
+    </div>
 );
 
 export const state = {
@@ -48,12 +52,13 @@ export const state = {
         { id: 'twitter', name: 'Twitter', href: 'https://twitter.com/u597' },
         { id: 'skype', name: 'Skype', href: 'skype:ktomohiro365' },
     ],
+    modalId: 'about',
 };
 
 export const view = state => (
-    <app>
+    <div id="container">
         <Profile icon={state.icon} name={state.name} />
         <Buttons items={state.buttons} />
-        <ModalWindow contents={contents} />
-    </app>
+        <ModalWindow id={state.modalId} contents={contents} />
+    </div>
 );

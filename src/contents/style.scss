@@ -32,7 +32,7 @@ $fa-font-path: "../../node_modules/font-awesome/fonts";
 }
 
 @mixin modal-window($margin-left, $width, $height) {
-    modal-window {
+    div.modal-window {
         margin-left: $margin-left;
         width: $width;
         height: $height;
@@ -52,32 +52,13 @@ body {
     font-family: "Overlock", sans-serif;
 }
 
-app {
-   position: relative;
-   top: -130px;
-   text-align: center;
-}
-
-
-buttons {
-    position: relative;
-    left: -5px;
-
-    a {
-        text-decoration: none;
-    }
-}
-
-modal-window {
+div.modal-window {
     position: absolute;
     display: none;
     left: 50%;
     z-index: 20;
     opacity: 0;
     font-family: sans-serif;
-    background-color: rgba(230, 74, 25, 0.9);
-    box-shadow: 0 2px 10px #555;
-    border: solid 2px #212121;
 
     &:target {
         display: block;
@@ -86,13 +67,17 @@ modal-window {
     }
 }
 
-modal-text {
+div.modal-text {
     padding: 20px;
     text-align: left;
 }
 
 a.modal-close {
     color: #222;
+}
+
+span.hl-text {
+    background-color: Highlight;
 }
 
 a.btn {
@@ -112,8 +97,19 @@ a.btn {
     }
 }
 
-span.hl-text {
-    background-color: Highlight;
+div#container {
+    position: relative;
+    top: -130px;
+    text-align: center;
+}
+
+div#buttons {
+    position: relative;
+    left: -5px;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 img#icon {
@@ -138,6 +134,12 @@ span#name {
     opacity: 0;
     animation: fade-in 1s ease 1.2s;
     animation-fill-mode: forwards;
+}
+
+div#about {
+    background-color: rgba(230, 74, 25, 0.9);
+    box-shadow: 0 2px 10px #555;
+    border: solid 2px #212121;
 }
 
 a#btn-about {

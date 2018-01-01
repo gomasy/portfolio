@@ -12,7 +12,7 @@ meta.content = 'width=device-width, initial-scale=1';
 document.head.appendChild(meta);
 
 const root = document.createElement('div');
-root.id = 'main';
+root.id = 'app';
 document.body.appendChild(root);
 
-app(state, null, view, document.getElementById('main'));
+app(state, null, view, document.getElementById('app'));
