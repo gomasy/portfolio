@@ -1,6 +1,6 @@
 import gaTrack from 'ganalytics';
 import { app } from 'hyperapp';
-import { state, view } from './app';
+import { state, actions, view } from './app';
 
 // contents
 import './contents/style.scss';
@@ -19,4 +19,4 @@ document.body.appendChild(div);
 const ga = new gaTrack('UA-54951000-1');
 ga.send('pageview');
 
-app(state, null, view, document.getElementById('app'));
+app(state, actions, view, document.getElementById('app'));
