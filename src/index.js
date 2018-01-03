@@ -8,7 +8,7 @@ import './contents/favicon.ico';
 
 const meta = document.createElement('meta');
 meta.name = 'viewport';
-meta.content = 'width=device-width, initial-scale=1';
+meta.content = 'width=device-width';
 document.head.appendChild(meta);
 
 const div = document.createElement('div');
