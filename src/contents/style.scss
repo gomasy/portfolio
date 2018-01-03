@@ -123,6 +123,7 @@ div#modal-window {
     opacity: 0;
     z-index: 20;
     font-family: sans-serif;
+    color: #222;
     background-color: rgba(230, 74, 25, 0.9);
     box-shadow: 0 2px 10px #555;
     border: solid 2px #212121;
@@ -134,7 +135,6 @@ div#modal-text {
 }
 
 a#modal-close {
-    color: #222;
     cursor: pointer;
 }
 
