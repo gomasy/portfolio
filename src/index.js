@@ -2,9 +2,6 @@ import gaTrack from 'ganalytics';
 import { app } from 'hyperapp';
 import { state, actions, view } from './app';
 
-// polyfill
-import 'babel-polyfill';
-
 // contents
 import './contents/style.scss';
 import './contents/favicon.ico';
