@@ -10,13 +10,13 @@ $fa-font-path: "../../node_modules/font-awesome/fonts";
 /* content */
 @mixin button($top, $bg-color, $bd-color, $hl-color, $hl-bd-color, $offset-sec, $icon, $icon-offset) {
     top: $top;
-    background-color: $bg-color;
+    background: $bg-color;
     border-bottom: solid 4px $bd-color;
     animation: fade-in 0.5s ease-out $offset-sec;
     animation-fill-mode: forwards;
 
     &:hover {
-        background-color: $hl-color;
+        background: $hl-color;
         border-bottom: solid 4px $hl-bd-color;
     }
 
@@ -135,7 +135,7 @@ div#container {
         opacity: 0;
         z-index: 20;
         color: #222;
-        background-color: rgba(230, 74, 25, 0.9);
+        background: rgba(230, 74, 25, 0.9);
         box-shadow: 0 2px 10px #555;
         border: solid 2px #212121;
         font-family: sans-serif;
@@ -150,7 +150,7 @@ div#container {
         }
 
         span.hl-text {
-            background-color: Highlight;
+            background: Highlight;
         }
     }
 
