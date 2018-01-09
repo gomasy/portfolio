@@ -6,6 +6,9 @@ import { state, actions, view } from './app';
 import './contents/style.scss';
 import './contents/favicon.ico';
 
+// Object.assign()
+Object.assign = require('object-assign');
+
 const meta = document.createElement('meta');
 meta.name = 'viewport';
 meta.content = 'width=device-width';
