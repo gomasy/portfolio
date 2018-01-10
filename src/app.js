@@ -2,22 +2,18 @@ import { h } from 'hyperapp';
 
 const Profile = ({ icon, name }) => (
     <div id="profile">
-        <img id="icon" src={icon} />
-        <span id="name">{name}</span>
+        <img src={icon} />
+        <span>{name}</span>
     </div>
-);
-
-const Button = ({ id, name, href }) => (
-    <a class="btn" id={'btn-' + id} href={href}>{name}</a>
 );
 
 const Buttons = ({ openModal }) => (
     <div id="buttons">
-        <a class="btn" id="btn-about" onclick={openModal}>About</a>
-        <Button id="blog" name="Blog" href="https://blog.gomasy.jp/" />
-        <Button id="github" name="GitHub" href="https://github.com/Gomasy" />
-        <Button id="twitter" name="Twitter" href="https://twitter.com/u597" />
-        <Button id="skype" name="Skype" href="skype:ktomohiro365" />
+        <a id="about" onclick={openModal}>About</a>
+        <a id="blog" href="https://blog.gomasy.jp/">Blog</a>
+        <a id="github" href="https://github.com/Gomasy">GitHub</a>
+        <a id="twitter" href="https://twitter.com/u597">Twitter</a>
+        <a id="skype" href="skype:ktomohiro365">Skype</a>
     </div>
 );
 
@@ -26,8 +22,8 @@ const ModalWindow = ({ state, closeModal }) => (
         <div id="modal-text">
             <p>なにもできません。<br />
             Like: Arch Linux, Ruby, PHP, Vim</p>
-            <p>Mail: <span class="hl-text">$ echo 'bnlhbkBnb21hc3kuanA=' | base64 -d</span><br />
-            PGP Key: <span class="hl-text">02BE 7F39 D978 AC7E</span></p>
+            <p>Mail: <span class="hl">$ echo 'bnlhbkBnb21hc3kuanA=' | base64 -d</span><br />
+            PGP Key: <span class="hl">02BE 7F39 D978 AC7E</span></p>
         </div>
         <a id="modal-close" onclick={closeModal}>[Close]</a>
     </div>

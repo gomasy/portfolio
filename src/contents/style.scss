@@ -58,7 +58,7 @@ div#container {
     text-align: center;
 
     div#profile {
-        img#icon {
+        img {
             position: relative;
             display: block;
             width: 250px;
@@ -72,7 +72,7 @@ div#container {
             animation-fill-mode: forwards;
         }
 
-        span#name {
+        span {
             position: relative;
             display: block;
             top: -20px;
@@ -87,9 +87,7 @@ div#container {
         position: relative;
         left: -5px;
 
-        a { text-decoration: none; }
-
-        a.btn {
+        a {
             position: absolute;
             display: block;
             margin: 8px;
@@ -98,6 +96,7 @@ div#container {
             opacity: 0;
             font-size: 30px;
             border-radius: 3px;
+            text-decoration: none;
 
             &:before {
                 position: absolute;
@@ -106,24 +105,24 @@ div#container {
             }
         }
 
-        a#btn-about {
+        a#about {
             @include button(0px, #e53935, #b71c1c, #ea605d, #c54949, 1.4s, "\f007", 10px);
             cursor: pointer;
         }
 
-        a#btn-blog {
+        a#blog {
             @include button(48px, #7cb342, #558b2f, #96c267, #76a258, 1.5s, "\f19a", 7px);
         }
 
-        a#btn-github {
+        a#github {
             @include button(96px, #a1887f, #6d4c41, #b39f98, #8a6f66, 1.6s, "\f09b", 10px);
         }
 
-        a#btn-twitter {
+        a#twitter {
             @include button(144px, #7986cb, #3949ab, #939ed5, #606dbb, 1.7s, "\f099", 10px);
         }
 
-        a#btn-skype {
+        a#skype {
             @include button(192px, #039be5, #0277bd, #35afea, #3492ca, 1.8s, "\f17e", 10px);
         }
     }
@@ -149,7 +148,7 @@ div#container {
             cursor: pointer;
         }
 
-        span.hl-text {
+        span.hl {
             background: Highlight;
         }
     }
