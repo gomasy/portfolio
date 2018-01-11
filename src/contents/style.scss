@@ -60,7 +60,7 @@ div#container {
     div#profile {
         img {
             position: relative;
-            display: block;
+            display: inherit;
             width: 250px;
             height: 250px;
             top: 100px;
@@ -74,7 +74,7 @@ div#container {
 
         span {
             position: relative;
-            display: block;
+            display: inherit;
             top: -20px;
             opacity: 0;
             font-size: 20px;
@@ -89,7 +89,7 @@ div#container {
 
         a {
             position: absolute;
-            display: block;
+            display: inherit;
             margin: 8px;
             width: 250px;
             color: #212121;
