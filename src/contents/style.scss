@@ -8,7 +8,8 @@ $fa-font-path: "../../node_modules/font-awesome/fonts";
 @import "../../node_modules/font-awesome/scss/path";
 
 /* content */
-@mixin button($bg-color, $bd-color, $hl-color, $hl-bd-color, $offset-sec, $icon, $icon-offset) {
+@mixin button($top, $bg-color, $bd-color, $hl-color, $hl-bd-color, $offset-sec, $icon, $icon-offset) {
+    top: $top;
     background: $bg-color;
     border-bottom: solid 4px $bd-color;
     animation: fade-in 0.5s ease-out $offset-sec;
@@ -30,9 +31,9 @@ $fa-font-path: "../../node_modules/font-awesome/fonts";
     }
 }
 
-@mixin modal-window($width, $height, $margin-x) {
+@mixin modal-window($margin-left, $width, $height) {
     div#container div#modal-window {
-        margin: -#{$height} $margin-x;
+        margin-left: $margin-left;
         width: $width;
         height: $height;
     }
@@ -52,14 +53,13 @@ body {
 }
 
 div#container {
+    position: relative;
     top: -130px;
     text-align: center;
 
     div#profile {
-        position: relative;
-
         img {
-            position: inherit;
+            position: relative;
             display: inherit;
             width: 250px;
             height: 250px;
@@ -73,7 +73,7 @@ div#container {
         }
 
         span {
-            position: inherit;
+            position: relative;
             display: inherit;
             top: -20px;
             opacity: 0;
@@ -85,9 +85,10 @@ div#container {
 
     div#buttons {
         position: relative;
+        left: -5px;
 
         a {
-            position: inherit;
+            position: absolute;
             display: inherit;
             margin: 8px;
             width: 250px;
@@ -105,24 +106,24 @@ div#container {
         }
 
         a#about {
-            @include button(#e53935, #b71c1c, #ea605d, #c54949, 1.4s, "\f007", 10px);
+            @include button(0px, #e53935, #b71c1c, #ea605d, #c54949, 1.4s, "\f007", 10px);
             cursor: pointer;
         }
 
         a#blog {
-            @include button(#7cb342, #558b2f, #96c267, #76a258, 1.5s, "\f19a", 7px);
+            @include button(48px, #7cb342, #558b2f, #96c267, #76a258, 1.5s, "\f19a", 7px);
         }
 
         a#github {
-            @include button(#a1887f, #6d4c41, #b39f98, #8a6f66, 1.6s, "\f09b", 10px);
+            @include button(96px, #a1887f, #6d4c41, #b39f98, #8a6f66, 1.6s, "\f09b", 10px);
         }
 
         a#twitter {
-            @include button(#7986cb, #3949ab, #939ed5, #606dbb, 1.7s, "\f099", 10px);
+            @include button(144px, #7986cb, #3949ab, #939ed5, #606dbb, 1.7s, "\f099", 10px);
         }
 
         a#skype {
-            @include button(#039be5, #0277bd, #35afea, #3492ca, 1.8s, "\f17e", 10px);
+            @include button(192px, #039be5, #0277bd, #35afea, #3492ca, 1.8s, "\f17e", 10px);
         }
     }
 
@@ -183,13 +184,13 @@ div#container {
 
 /* media query */
 @media screen and (min-width: 481px) {
-    @include modal-window(450px, 250px, -225px);
+    @include modal-window(-225px, 450px, 250px);
 }
 
 @media screen and (max-width: 480px) {
-    @include modal-window(325px, 250px, -165px);
+    @include modal-window(-165px, 325px, 250px);
 }
 
 @media screen and (max-width: 320px) {
-    @include modal-window(280px, 275px, -145px);
+    @include modal-window(-145px, 280px, 275px);
 }
