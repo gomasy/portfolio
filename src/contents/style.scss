@@ -171,19 +171,12 @@ div#container {
 }
 
 @keyframes rotate {
-    0‰ {
-        transform: rotateY(0deg);
-    }
     25% {
         opacity: 1;
     }
-    49% {
-        opacity: 1;
-        transform: rotateY(359deg);
-    }
     50% {
         opacity: 1;
-        transform: translate(0, 0) rotateY(360deg);
+        transform: translate(0, 0) rotateY(1turn);
     }
     100% {
         opacity: 1;
