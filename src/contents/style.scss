@@ -176,7 +176,10 @@ div#container {
     }
     25% {
         opacity: 1;
-        transform: rotateY(180deg);
+    }
+    49% {
+        opacity: 1;
+        transform: rotateY(359deg);
     }
     50% {
         opacity: 1;
