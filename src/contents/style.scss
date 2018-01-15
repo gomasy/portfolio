@@ -99,7 +99,7 @@ div#container {
             text-decoration: none;
 
             &:before {
-                position: absolute;
+                position: inherit;
                 top: 5px;
                 font-family: "FontAwesome";
             }
