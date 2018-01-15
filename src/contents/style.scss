@@ -58,10 +58,8 @@ div#container {
     top: -130px;
 
     div#profile {
-        position: inherit;
-
         img {
-            position: inherit;
+            position: relative;
             display: inherit;
             width: 250px;
             height: 250px;
@@ -75,7 +73,7 @@ div#container {
         }
 
         span {
-            position: inherit;
+            position: relative;
             display: inherit;
             top: -20px;
             opacity: 0;
@@ -87,7 +85,8 @@ div#container {
 
     div#buttons {
         position: inherit;
-        left: 2px;
+        margin: 0 auto;
+        width: 250px;
 
         a {
             position: absolute;
