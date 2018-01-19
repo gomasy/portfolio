@@ -16,7 +16,7 @@
         "babel-preset-env": "^1.6.1",
         "babel-preset-hyperapp": "^2.3.0",
         "clean-webpack-plugin": "^0.1.17",
-        "css-loader": "^0.28.8",
+        "css-loader": "^0.28.9",
         "file-loader": "^1.1.6",
         "font-awesome": "^4.7.0",
         "ganalytics": "^3.0.0",
