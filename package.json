@@ -15,7 +15,7 @@
         "babel-loader": "^7.1.2",
         "babel-preset-env": "^1.6.1",
         "babel-preset-hyperapp": "^2.3.0",
-        "clean-webpack-plugin": "^0.1.17",
+        "clean-webpack-plugin": "^0.1.18",
         "css-loader": "^0.28.9",
         "file-loader": "^1.1.6",
         "font-awesome": "^4.7.0",
@@ -25,7 +25,7 @@
         "node-sass": "^4.7.2",
         "object-assign": "^4.1.1",
         "sass-loader": "^6.0.6",
-        "style-loader": "^0.19.1",
+        "style-loader": "^0.20.1",
         "webpack": "^3.10.0"
     }
 }
