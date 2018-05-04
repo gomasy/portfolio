@@ -2,7 +2,9 @@
     "private": true,
     "babel": {
         "presets": [
-            "env",
+            [ "env", {
+                "modules": false
+            }],
             "hyperapp"
         ]
     },
