@@ -15,7 +15,7 @@
     "devDependencies": {
         "babel-core": "^6.26.3",
         "babel-loader": "^7.1.4",
-        "babel-preset-env": "^1.6.1",
+        "babel-preset-env": "^1.7.0",
         "babel-preset-hyperapp": "^2.3.0",
         "clean-webpack-plugin": "^0.1.19",
         "css-loader": "^0.28.11",
@@ -28,7 +28,7 @@
         "object-assign": "^4.1.1",
         "sass-loader": "^7.0.1",
         "style-loader": "^0.21.0",
-        "webpack": "^4.7.0",
-        "webpack-cli": "^2.1.2"
+        "webpack": "^4.8.2",
+        "webpack-cli": "^2.1.3"
     }
 }
