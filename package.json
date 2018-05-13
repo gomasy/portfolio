@@ -9,8 +9,8 @@
         ]
     },
     "scripts": {
-        "build": "NODE_ENV=production webpack --optimize-minimize",
-        "watch": "NODE_ENV=development webpack --watch"
+        "build": "yarn install && NODE_ENV=production webpack --optimize-minimize",
+        "watch": "yarn install && NODE_ENV=development webpack --watch"
     },
     "devDependencies": {
         "babel-core": "^6.26.3",
@@ -28,7 +28,7 @@
         "object-assign": "^4.1.1",
         "sass-loader": "^7.0.1",
         "style-loader": "^0.21.0",
-        "webpack": "^4.8.2",
+        "webpack": "^4.8.3",
         "webpack-cli": "^2.1.3"
     }
 }
