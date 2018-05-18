@@ -1,13 +1,5 @@
 {
     "private": true,
-    "babel": {
-        "presets": [
-            [ "env", {
-                "modules": false
-            }],
-            "hyperapp"
-        ]
-    },
     "scripts": {
         "build": "yarn install && NODE_ENV=production webpack --optimize-minimize",
         "watch": "yarn install && NODE_ENV=development webpack --watch"
@@ -24,7 +16,7 @@
         "ganalytics": "^3.0.0",
         "html-webpack-plugin": "^3.2.0",
         "hyperapp": "^1.2.5",
-        "node-sass": "^4.8.3",
+        "node-sass": "^4.9.0",
         "object-assign": "^4.1.1",
         "sass-loader": "^7.0.1",
         "style-loader": "^0.21.0",
