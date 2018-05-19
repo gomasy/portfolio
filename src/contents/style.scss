@@ -35,10 +35,9 @@ $fa-font-path: '~font-awesome/fonts';
     }
 }
 
-@mixin modal-window($margin-left, $width, $height) {
+@mixin modal-window($width, $height) {
     div.container {
         div.modal-window {
-            margin-left: $margin-left;
             width: $width;
             height: $height;
         }
@@ -142,9 +141,7 @@ div.container {
     div.modal-window {
         position: absolute;
         display: none;
-        left: 50%;
         opacity: 0;
-        z-index: 20;
         margin-top: 130px;
         font-family: sans-serif;
         color: #222;
@@ -198,13 +195,13 @@ div.container {
 
 /* media query */
 @media screen and (min-width: 481px) {
-    @include modal-window(-225px, 450px, 250px);
+    @include modal-window(450px, 250px);
 }
 
 @media screen and (max-width: 480px) {
-    @include modal-window(-165px, 325px, 250px);
+    @include modal-window(325px, 250px);
 }
 
 @media screen and (max-width: 320px) {
-    @include modal-window(-145px, 280px, 275px);
+    @include modal-window(280px, 275px);
 }
