@@ -109,6 +109,7 @@ div.container {
             line-height: 1.25em;
             text-decoration: none;
             border-radius: 10px;
+            transition: all .1s;
 
             &:before {
                 position: inherit;
