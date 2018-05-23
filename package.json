@@ -1,8 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "build": "yarn install && NODE_ENV=production webpack --optimize-minimize",
-        "watch": "yarn install && NODE_ENV=development webpack --watch"
+        "build": "which yarn &> /dev/null && yarn || npm install && NODE_ENV=production webpack --optimize-minimize",
+        "watch": "which yarn &> /dev/null && yarn || npm install && NODE_ENV=development webpack --watch"
     },
     "devDependencies": {
         "babel-core": "^6.26.3",
