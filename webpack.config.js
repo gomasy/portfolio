@@ -18,7 +18,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [ 'style-loader', 'css-loader', 'sass-loader' ],
+                use: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ],
             },
             {
                 test: /\.(woff2?|ttf|eot|svg|ico|jpg)(\?v=[\d.]+|\?[\s\S]+)?$/,
@@ -28,7 +28,7 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin([
-            path.join(__dirname, '/public/*'),
+            path.join(__dirname, '/public/**'),
         ]),
         new HtmlWebpackPlugin({
             title: "Gomasy's portfolio",

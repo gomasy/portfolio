@@ -5,6 +5,7 @@
         "watch": "NODE_ENV=development webpack --watch"
     },
     "devDependencies": {
+        "autoprefixer": "^8.5.1",
         "babel-core": "^6.26.3",
         "babel-loader": "^7.1.4",
         "babel-preset-env": "^1.7.0",
@@ -19,6 +20,7 @@
         "node-sass": "^4.9.0",
         "normalize.css": "^8.0.0",
         "object-assign": "^4.1.1",
+        "postcss-loader": "^2.1.5",
         "sass-loader": "^7.0.1",
         "style-loader": "^0.21.0",
         "webpack": "^4.8.3",
