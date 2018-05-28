@@ -150,6 +150,8 @@ div.container {
         background: rgba(230, 74, 25, 0.9);
         box-shadow: 0 2px 10px #555;
         border: solid 2px #212121;
+        animation: fade-in 0.5s ease-out;
+        animation-fill-mode: forwards;
 
         div.modal-text {
             padding: 20px;
@@ -168,8 +170,6 @@ div.container {
 
     div#show {
         display: block;
-        animation: fade-in 0.5s ease-out;
-        animation-fill-mode: forwards;
     }
 }
 
