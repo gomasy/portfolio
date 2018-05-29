@@ -142,16 +142,15 @@ div.container {
 
     div.modal-window {
         position: absolute;
-        display: none;
-        opacity: 0;
         margin-top: 130px;
         font-family: sans-serif;
         color: #222;
         background: rgba(230, 74, 25, 0.9);
         box-shadow: 0 2px 10px #555;
         border: solid 2px #212121;
-        animation: fade-in 0.5s ease-out;
-        animation-fill-mode: forwards;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s;
 
         div.modal-text {
             padding: 20px;
@@ -169,7 +168,9 @@ div.container {
     }
 
     div#show {
-        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(20px);
     }
 }
 
@@ -177,7 +178,7 @@ div.container {
 @keyframes fade-in {
     100% {
         opacity: 1;
-        transform: translate(0, 20px);
+        transform: translateY(20px);
     }
 }
 
@@ -191,17 +192,17 @@ div.container {
     }
     100% {
         opacity: 1;
-        transform: translate(0, -100px);
+        transform: translateY(-100px);
     }
 }
 
 /* media query */
 @media screen and (min-width: 481px) {
-    @include modal-window(450px, 250px);
+    @include modal-window(450px, 265px);
 }
 
 @media screen and (max-width: 480px) {
-    @include modal-window(325px, 250px);
+    @include modal-window(325px, 265px);
 }
 
 @media screen and (max-width: 320px) {
