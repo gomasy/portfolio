@@ -63,8 +63,7 @@ div.container {
     text-align: center;
 
     div.profile {
-        display: flex;
-        flex-direction: column;
+        display: inherit;
         position: relative;
         width: 254px;
         height: 290px;
