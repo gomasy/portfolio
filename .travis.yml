@@ -10,3 +10,6 @@ after_script:
 addons:
   apt:
     update: true
+notifications:
+  slack:
+    secure: fOYrRTXFM0g9Qw/uo3FTBanRCfb+LrSh2iYFQNqpCvDqDJLITUdtkGHLUVMl1R2vapdV4G0O6e9zacCEPwCdtMZDdbfT4Wky6ap9SEfJh4AsDbcoQL30H2nOAu9B8hPTLobmMRyLJWAlDwA6od11qdVSIWWkOCGv7MVka8SzmJ0=
