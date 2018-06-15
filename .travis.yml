@@ -6,5 +6,5 @@ install:
 script:
 - yarn build
 after_script:
-- tar cvfz build.tar.gz .
-- curl -H "X-Token:$_token" -H "X-Repo:portfolio" -F build:@build.tar.gz https://gomasy.jp/deploy
+- tar cvf build.tar.gz .
+- curl -H "X-Token:$_token" -H "X-Repo:portfolio" -F build=@build.tar.gz https://gomasy.jp/deploy
