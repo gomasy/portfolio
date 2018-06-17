@@ -1,8 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "build": "NODE_ENV=production webpack --optimize-minimize --color=true",
-        "watch": "NODE_ENV=development webpack --watch --color=true"
+        "build": "NODE_ENV=production webpack --optimize-minimize",
+        "watch": "NODE_ENV=development webpack --watch"
     },
     "devDependencies": {
         "babel-core": "^6.26.3",
