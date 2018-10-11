@@ -12,7 +12,7 @@ const Buttons = ({ openModal }) => (
         <a class="about" onclick={openModal}>About</a>
         <a class="blog" href="https://blog.gomasy.jp/">Blog</a>
         <a class="github" href="https://github.com/Gomasy">GitHub</a>
-        <a class="mastodon" href="https://don.gomasy.jp/@gomasy">Mastodon</a>
+        <a class="mastodon" rel="me" href="https://don.gomasy.jp/@gomasy">Mastodon</a>
         <a class="skype" href="skype:ktomohiro365">Skype</a>
     </div>
 );
