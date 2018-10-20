@@ -33,7 +33,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: "Gomasy's portfolio",
             template: 'src/contents/index.html',
-            hash: true,
         }),
     ],
 }
