@@ -1,9 +1,6 @@
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: process.env.NODE_ENV,
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, '/public'),
@@ -27,12 +24,12 @@ module.exports = {
         ],
     },
     plugins: [
-        new CleanWebpackPlugin([
+        new (require('clean-webpack-plugin'))([
             path.join(__dirname, '/public/*'),
         ]),
-        new HtmlWebpackPlugin({
+        new (require('html-webpack-plugin'))({
             title: "Gomasy's portfolio",
-            template: 'src/contents/index.html',
+            template: './src/contents/index.html',
         }),
     ],
 }
