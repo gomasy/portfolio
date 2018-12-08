@@ -1,8 +1,13 @@
 {
     "presets": [
-        [ "env", {
+        [ "@babel/env", {
             "modules": false
-        }],
-        "hyperapp"
+        }]
+    ],
+    "plugins": [
+        [ "@babel/plugin-transform-react-jsx", {
+            "pragma": "h",
+            "pragmaFrag": "''"
+        }]
     ]
 }
