@@ -25,9 +25,9 @@ module.exports = {
         ],
     },
     plugins: [
-        new (require('clean-webpack-plugin'))([
-            path.join(__dirname, '/public/*'),
-        ]),
+        new (require('clean-webpack-plugin'))({
+            verbose: true,
+        }),
         new (require('html-webpack-plugin'))({
             title: "Gomasy's portfolio",
             template: './src/contents/index.html',
