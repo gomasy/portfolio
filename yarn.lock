@@ -1921,9 +1921,9 @@ function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
 
-ganalytics@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/ganalytics/-/ganalytics-3.1.1.tgz#d5a1320c8fb42cff4568f789edde98f92089ff56"
+ganalytics@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/ganalytics/-/ganalytics-3.1.2.tgz#a51685109bff92cb448042af7206396ed786c3e5"
 
 gauge@~2.7.3:
   version "2.7.4"
