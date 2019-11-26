@@ -1,4 +1,5 @@
 import { h } from 'hyperapp';
+import Icon from './contents/icon.jpg';
 
 const Profile = ({ icon, name }) => (
     <div class="profile">
@@ -30,7 +31,7 @@ const ModalWindow = ({ state, closeModal }) => (
 );
 
 export const state = {
-    icon: require('./contents/icon.jpg'),
+    icon: Icon,
     name: 'Gomasy',
     modal: '',
 };
