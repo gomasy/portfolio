@@ -10,7 +10,7 @@ export const state = {
 };
 
 export const view = state =>
-    <div>
+    <div class="container">
         <Avator icon={state.icon} name={state.name} />
         <Accounts />
         <Services />

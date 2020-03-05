@@ -6,6 +6,11 @@ import { state, view } from './app';
 import './contents/style.scss';
 import './contents/favicon.ico';
 
+const meta = document.createElement('meta');
+meta.name = 'viewport';
+meta.content = 'width=device-width';
+document.head.appendChild(meta);
+
 const div = document.createElement('div');
 div.id = 'app';
 document.body.appendChild(div);
