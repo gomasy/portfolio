@@ -10,11 +10,11 @@ Notices of files:
 * /src/app.js
 * /src/index.js
 * /src/contents/style.scss
+* /src/components
 
 > Licensed CC BY 3.0  
 > https://creativecommons.org/licenses/by/3.0/
 
-* /src/components
 * /src/contents/favicon.ico
 * /src/contents/icon.jpg
 
