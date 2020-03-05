@@ -25,13 +25,18 @@ module.exports = {
             },
         ],
     },
+    performance: {
+        maxEntrypointSize: 1024000,
+        maxAssetSize: 1024000,
+    },
     plugins: [
-        new CleanWebpackPlugin({
-            verbose: true,
-        }),
+        new CleanWebpackPlugin(),
         new (require('html-webpack-plugin'))({
             title: "Gomasy's portfolio",
             template: './src/contents/index.html',
         }),
     ],
+    devServer: {
+        useLocalIp: true,
+    },
 }
