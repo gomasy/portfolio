@@ -6,6 +6,13 @@ import { state, view } from './app';
 import './contents/style.scss';
 import './contents/favicon.ico';
 
+// Object.assign polyfill
+Object.assign = require('object-assign');
+
+// google analytics
+const ga = new gaTrack('UA-54951000-1');
+ga.send('pageview');
+
 const meta = document.createElement('meta');
 meta.name = 'viewport';
 meta.content = 'width=device-width';
@@ -14,10 +21,6 @@ document.head.appendChild(meta);
 const div = document.createElement('div');
 div.id = 'app';
 document.body.appendChild(div);
-
-// google analytics
-const ga = new gaTrack('UA-54951000-1');
-ga.send('pageview');
 
 app({
     init: 0,
