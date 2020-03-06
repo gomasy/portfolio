@@ -7,7 +7,9 @@ import './contents/style.scss';
 import './contents/favicon.ico';
 
 // Object.assign polyfill
-Object.assign = require('object-assign');
+if (typeof Object.assign !== 'function') {
+    Object.assign = require('object-assign');
+}
 
 // google analytics
 const ga = new gaTrack('UA-54951000-1');
