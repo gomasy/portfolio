@@ -17,7 +17,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [ 'style-loader', 'css-loader', 'sass-loader' ],
+                use: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ],
             },
             {
                 test: /\.(woff2?|ttf|eot|svg|ico|jpg)(\?v=[\d.]+|\?[\s\S]+)?$/,
@@ -32,8 +32,9 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new (require('html-webpack-plugin'))({
-            title: "Gomasy's portfolio",
             template: './src/contents/index.html',
+            title: "Gomasy's portfolio",
+            hash: true,
         }),
     ],
     devServer: {
