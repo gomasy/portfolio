@@ -106,3 +106,9 @@ i {
         text-decoration: none;
     }
 }
+
+@media (max-height: 700px) {
+    body {
+        align-items: normal;
+    }
+}
