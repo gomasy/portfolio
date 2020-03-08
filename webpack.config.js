@@ -30,7 +30,7 @@ module.exports = {
         maxAssetSize: 1024000,
     },
     plugins: [
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin,
         new (require('html-webpack-plugin'))({
             template: './src/contents/index.html',
             title: "Gomasy's portfolio",

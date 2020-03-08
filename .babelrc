@@ -14,7 +14,7 @@
         }]
     ],
     "plugins": [
-        [ "@babel/plugin-transform-react-jsx", {
+        [ "@babel/transform-react-jsx", {
             "pragma": "h",
             "pragmaFrag": "''"
         }]
