@@ -7,7 +7,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.10.1",
-        "@babel/plugin-transform-react-jsx": "^7.9.4",
+        "@babel/plugin-transform-react-jsx": "^7.10.1",
         "@babel/preset-env": "^7.10.1",
         "@fortawesome/fontawesome-free": "^5.13.0",
         "autoprefixer": "^9.8.0",
