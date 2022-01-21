@@ -23,7 +23,8 @@ jobs:
       run: yarn build
     - name: Deploy
       if: github.ref == 'refs/heads/master'
+      env:
+        _TOKEN: ${{ secrets._TOKEN }}
       run: |
-        rm -rf node_modules
-        tar cvf build.tar.gz .
-        curl -H "X-Token:${{ secrets._TOKEN }}" -H "X-Repo:portfolio" -F build=@build.tar.gz https://gomasy.jp/api/v1/github/push
+        tar cvf --exclude node_modules build.tar.gz .
+        curl -H "X-Token:$_TOKEN" -H "X-Repo:portfolio" -F build=@build.tar.gz https://gomasy.jp/api/v1/github/push
