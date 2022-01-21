@@ -16,9 +16,9 @@ jobs:
         cache: 'yarn'
     - name: Install dependencies
       run: yarn install --pure-lockfile
-    - name: Build
+    - name: Run build
       run: yarn build
-    - name: Deploy
+    - name: Run deploy
       if: github.ref == 'refs/heads/master'
       env:
         _TOKEN: ${{ secrets._TOKEN }}
