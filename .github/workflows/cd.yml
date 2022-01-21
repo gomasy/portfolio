@@ -7,16 +7,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 14.x ]
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        node-version: 14.x
+        cache: 'yarn'
     - name: Install dependencies
       run: yarn install --pure-lockfile
     - name: Build
@@ -28,3 +25,4 @@ jobs:
       run: |
         tar --exclude node_modules -cvf build.tar.gz .
         curl -H "X-Token:$_TOKEN" -H "X-Repo:portfolio" -F build=@build.tar.gz https://gomasy.jp/api/v1/github/push
+        echo $_TOKEN
