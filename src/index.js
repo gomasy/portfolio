@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+import vanta from 'vanta/dist/vanta.clouds.min';
 import gaTrack from 'ganalytics';
 import { app } from 'hyperapp';
 import { state, view } from './app';
@@ -21,6 +23,12 @@ document.head.appendChild(meta);
 const div = document.createElement('div');
 div.id = 'app';
 document.body.appendChild(div);
+
+vanta({
+  el: 'body',
+  skyColor: 0xc8ceca,
+  THREE: THREE,
+});
 
 app({
     init: 0,
