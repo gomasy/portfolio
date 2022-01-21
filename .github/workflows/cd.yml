@@ -25,4 +25,3 @@ jobs:
       run: |
         tar --exclude node_modules -cvf build.tar.gz .
         curl -H "X-Token:$_TOKEN" -H "X-Repo:portfolio" -F build=@build.tar.gz https://gomasy.jp/api/v1/github/push
-        echo $_TOKEN
