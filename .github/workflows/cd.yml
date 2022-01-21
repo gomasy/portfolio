@@ -26,5 +26,5 @@ jobs:
       env:
         _TOKEN: ${{ secrets._TOKEN }}
       run: |
-        tar cvf --exclude node_modules build.tar.gz .
+        tar --exclude node_modules -cvf build.tar.gz .
         curl -H "X-Token:$_TOKEN" -H "X-Repo:portfolio" -F build=@build.tar.gz https://gomasy.jp/api/v1/github/push
