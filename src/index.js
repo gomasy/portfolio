@@ -8,9 +8,6 @@ import { state, view } from './app';
 import './contents/style.scss';
 import './contents/favicon.ico';
 
-// Object.assign polyfill
-import 'core-js/modules/es.object.assign';
-
 // google analytics
 const ga = new gaTrack('UA-54951000-1');
 ga.send('pageview');
@@ -25,9 +22,9 @@ div.id = 'app';
 document.body.appendChild(div);
 
 vanta({
-  el: 'body',
-  skyColor: 0xc8ceca,
-  THREE: THREE,
+    el: 'body',
+    skyColor: 0xc8ceca,
+    THREE: THREE,
 });
 
 app({
