@@ -1,7 +1,6 @@
 import * as THREE from 'three';
 import vanta from 'vanta/dist/vanta.clouds.min';
-import Analytics from 'analytics';
-import googleAnalytics from '@analytics/google-analytics';
+import gaTrack from 'ganalytics';
 import { app } from 'hyperapp';
 import { state, view } from './app';
 
@@ -10,15 +9,8 @@ import './contents/style.scss';
 import './contents/favicon.ico';
 
 // google analytics
-const analytics = Analytics({
-    app: 'Gomasy\'s portfolio',
-    plugins: [
-        googleAnalytics({
-            trackingId: 'G-6DJ4FZDJP5',
-        })
-    ],
-})
-analytics.page();
+const ga = new gaTrack('UA-54951000-1');
+ga.send('pageview');
 
 const meta = document.createElement('meta');
 meta.name = 'viewport';
