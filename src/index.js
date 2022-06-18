@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import vanta from 'vanta/dist/vanta.clouds.min';
-import gaTrack from 'ganalytics';
+import { track } from '@minimal-analytics/ga4';
 import { app } from 'hyperapp';
 import { state, view } from './app';
 
@@ -9,8 +9,7 @@ import './contents/style.scss';
 import './contents/favicon.ico';
 
 // google analytics
-const ga = new gaTrack('UA-54951000-1');
-ga.send('pageview');
+track('G-VCTBDL25V3');
 
 const meta = document.createElement('meta');
 meta.name = 'viewport';
