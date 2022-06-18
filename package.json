@@ -27,7 +27,7 @@
         "three.js": "^0.77.1",
         "vanta": "^0.5.22",
         "webpack": "^4.44.2",
-        "webpack-cli": "^3.3.12",
+        "webpack-cli": "^4.10.0",
         "webpack-dev-server": "^3.11.2"
     }
 }
