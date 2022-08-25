@@ -872,9 +872,9 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@minimal-analytics/ga4@^1.6.4":
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/@minimal-analytics/ga4/-/ga4-1.6.4.tgz#d15e261436b9d56f1265e86ab794c608096267ab"
+"@minimal-analytics/ga4@^1.8.7":
+  version "1.8.7"
+  resolved "https://registry.yarnpkg.com/@minimal-analytics/ga4/-/ga4-1.8.7.tgz#4fee7b6354feb28480fdc8e60993105205e25929"
 
 "@types/anymatch@*":
   version "1.3.1"
