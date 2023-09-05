@@ -7,7 +7,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.22.15",
-        "@babel/plugin-transform-react-jsx": "^7.22.5",
+        "@babel/plugin-transform-react-jsx": "^7.22.15",
         "@babel/preset-env": "^7.22.14",
         "@fortawesome/fontawesome-free": "^5.15.4",
         "@minimal-analytics/ga4": "^1.6.4",
