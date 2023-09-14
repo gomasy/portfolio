@@ -6,7 +6,7 @@
         "start": "NODE_ENV=development webpack-dev-server"
     },
     "devDependencies": {
-        "@babel/core": "^7.22.17",
+        "@babel/core": "^7.22.19",
         "@babel/plugin-transform-react-jsx": "^7.22.15",
         "@babel/preset-env": "^7.22.15",
         "@fortawesome/fontawesome-free": "^5.15.4",
