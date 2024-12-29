@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -17,7 +18,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ],
+                use: [ MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader' ],
             },
             {
                 test: /\.(woff2?|ttf|eot|svg|ico|jpg)(\?v=[\d.]+|\?[\s\S]+)?$/,
@@ -31,9 +32,11 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin,
+        new MiniCssExtractPlugin({
+            filename: 'style.css',
+        }),
         new (require('html-webpack-plugin'))({
             template: './src/contents/index.html',
-            title: "Gomasy's portfolio",
             hash: true,
         }),
     ],
