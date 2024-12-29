@@ -266,12 +266,6 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.25.9"
 
-"@babel/plugin-syntax-jsx@^7.25.9":
-  version "7.25.9"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.25.9.tgz#a34313a178ea56f1951599b929c1ceacee719290"
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.25.9"
-
 "@babel/plugin-syntax-unicode-sets-regex@^7.18.6":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-unicode-sets-regex/-/plugin-syntax-unicode-sets-regex-7.18.6.tgz#d49a3b3e6b52e5be6740022317580234a6a47357"
@@ -539,16 +533,6 @@
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-property-literals/-/plugin-transform-property-literals-7.25.9.tgz#d72d588bd88b0dec8b62e36f6fda91cedfe28e3f"
   dependencies:
     "@babel/helper-plugin-utils" "^7.25.9"
-
-"@babel/plugin-transform-react-jsx@^7.25.9":
-  version "7.25.9"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx/-/plugin-transform-react-jsx-7.25.9.tgz#06367940d8325b36edff5e2b9cbe782947ca4166"
-  dependencies:
-    "@babel/helper-annotate-as-pure" "^7.25.9"
-    "@babel/helper-module-imports" "^7.25.9"
-    "@babel/helper-plugin-utils" "^7.25.9"
-    "@babel/plugin-syntax-jsx" "^7.25.9"
-    "@babel/types" "^7.25.9"
 
 "@babel/plugin-transform-regenerator@^7.25.9":
   version "7.25.9"
@@ -2868,10 +2852,6 @@ http-proxy@^1.17.0:
 https-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
-
-hyperapp@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-2.0.4.tgz#0be1bdfe46b28c73677adc408ce3a73f79cfd03f"
 
 iconv-lite@0.4.24:
   version "0.4.24"

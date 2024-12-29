@@ -12,11 +12,5 @@
             "corejs": 3,
             "modules": false
         }]
-    ],
-    "plugins": [
-        [ "@babel/transform-react-jsx", {
-            "pragma": "h",
-            "pragmaFrag": "''"
-        }]
     ]
 }

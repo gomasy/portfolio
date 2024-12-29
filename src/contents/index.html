@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <meta property="og:type" content="website">
     <meta property="og:description" content="寝たい">
     <meta property="og:url" content="https://gomasy.jp/">
@@ -10,8 +11,62 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <noscript>
-      This page requires JavaScript. Please enable JavaScript in your browser.
-    </noscript>
+    <div class="container">
+      <div class="avatar">
+        <img src="icon.jpg">
+        <span>Gomasy</span>
+      </div>
+      <div class="accounts">
+        <div class="header">
+          <span>Accounts</span>
+        </div>
+        <div class="accounts-container">
+          <div class="account">
+            <a href="https://github.com/Gomasy" target="_blank"><i>&#xf09b;</i>GitHub</a>
+          </div>
+          <div class="account">
+            <a href="skype:ktomohiro365" target="_blank"><i>&#xf17e;</i>Skype</a>
+          </div>
+          <div class="account">
+            <a href="https://steamcommunity.com/id/gomasy" target="_blank"><i>&#xf1b6;</i>Steam</a>
+          </div>
+          <div class="account">
+            <a href="https://lookup.guru/378157085524885506" target="_blank"><i>&#xf392;</i>Discord</a>
+          </div>
+          <div class="account">
+            <a href="https://don.gomasy.jp/@gomasy" target="_blank"><i>&#xf4f6;</i>Mastodon (don.gomasy.jp)</a>
+          </div>
+          <div class="account">
+            <a href="https://twitter.com/u597" target="_blank"><i>&#xf099;</i>Twitter (local only)</a>
+          </div>
+        </div>
+      </div>
+      <div class="services">
+        <div class="header">
+          <span>Services</span>
+        </div>
+        <div class="services-container">
+          <div class="service">
+            <a href="https://blog.gomasy.jp/" target="_blank"><i>&#xf781;</i>Blog</a>
+          </div>
+          <div class="service">
+            <a href="https://don.gomasy.jp/about/more" target="_blank"><i>&#xf4f6;</i>Mastodon Server (don.gomasy.jp)</a>
+          </div>
+          <div class="service">
+            <a href="https://repos.gomasy.jp/os/x86_64/" target="_blank"><i>&#xf187;</i>Arch Linux Repository</a>
+          </div>
+        </div>
+      </div>
+      <div class="others">
+        <div class="header">
+          <span>Others</span>
+        </div>
+        <div class="others-container">
+          <div class="other">
+            <a href="https://status.gomasy.jp/" target="_blank"><i>&#xf09e;</i>Server Statuses</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
