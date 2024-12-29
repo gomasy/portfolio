@@ -19,6 +19,8 @@ jobs:
     - name: Install dependencies
       run: yarn install --pure-lockfile
     - name: Run build
+      env:
+        NODE_OPTIONS: --openssl-legacy-provider
       run: yarn build
     - name: Run deploy
       if: github.ref == 'refs/heads/master'
