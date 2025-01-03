@@ -4,7 +4,7 @@
 @import '~normalize.css/normalize.css';
 
 // default font
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
+@import url(https://fonts.googleapis.com/css?family=Cabin);
 
 // font-awesome
 @import '~@fortawesome/fontawesome-free/scss/variables';
@@ -18,10 +18,8 @@ html, body {
 
 body {
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
+    font-family: 'Cabin', sans-serif;
 }
 
 i {
@@ -38,7 +36,8 @@ i {
 }
 
 .container {
-    margin: 15px;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 .header {
