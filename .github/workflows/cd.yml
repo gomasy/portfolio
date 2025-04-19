@@ -28,7 +28,7 @@ jobs:
         _TOKEN: ${{ secrets._TOKEN }}
       run: |
         tar --exclude "node_modules" --exclude ".git*" -cf build.tar.gz .
-        curl -H "X-Token:$_TOKEN" -H "X-Repo:portfolio" -F build=@build.tar.gz https://gomasy.jp/api/v1/github/push
+        curl -H "X-Token:$_TOKEN" -H "X-Repo:portfolio" -F build=@build.tar.gz https://api.gomasy.jp/v1/github/push
     - name: Post a message in a channel
       uses: slackapi/slack-github-action@v2
       if: github.ref == 'refs/heads/master'
