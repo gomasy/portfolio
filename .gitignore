@@ -1,3 +1,4 @@
 /node_modules
 /public
+/.parcel-cache
 yarn-error.log
