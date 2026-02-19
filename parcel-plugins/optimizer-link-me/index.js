@@ -8,9 +8,10 @@ module.exports = new Optimizer({
         }
         let html = await blobToString(contents);
         html = html.replace(
-            /<meta name="parcel-link-me" content="([^"]+)">/g,
+            /<meta name="link-me" content="([^"]+)">/g,
             '<link rel="me" href="$1">'
         );
+        html = html.replace(/[\uE000-\uF8FF]/g, (char) => `&#x${char.codePointAt(0).toString(16)};`);
         return {contents: html};
     }
 });
