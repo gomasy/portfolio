@@ -2,7 +2,6 @@
     "private": true,
     "scripts": {
         "build": "parcel build src/contents/index.html --dist-dir public",
-        "postbuild": "node fix-html.js",
         "watch": "parcel watch src/contents/index.html --dist-dir public",
         "start": "parcel src/contents/index.html --dist-dir public"
     },
