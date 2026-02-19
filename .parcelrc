@@ -1,7 +1,7 @@
 {
     "extends": "@parcel/config-default",
-    "namers": ["./parcel-namer-no-hash", "@parcel/namer-default"],
+    "namers": ["./parcel-plugins/parcel-namer-no-hash", "@parcel/namer-default"],
     "optimizers": {
-        "*.{html,xhtml}": ["@parcel/optimizer-htmlnano", "./parcel-optimizer-link-me"]
+        "*.{html,xhtml}": ["@parcel/optimizer-htmlnano", "./parcel-plugins/parcel-optimizer-link-me"]
     }
 }
