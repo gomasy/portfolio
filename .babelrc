@@ -1,13 +1,11 @@
 {
     "presets": [
         [ "@babel/env", {
-            "targets": {
-                "browsers": [
-                    "last 2 versions",
-                    "not dead",
-                    "not op_mini all"
-                ]
-            },
+            "targets": [
+                "last 2 versions",
+                "not dead",
+                "not op_mini all"
+            ],
             "useBuiltIns": "usage",
             "corejs": 3,
             "modules": false
