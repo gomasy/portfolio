@@ -9,10 +9,11 @@ My portfolio site
 
 Notices of files:
 
-* /src/app.js
-* /src/index.js
+* /src/contents/index.html
 * /src/contents/style.scss
-* /src/components
+* /src/index.js
+* /parcel-plugins/namer-no-hash/index.js
+* /parcel-plugins/optimizer-link-me/index.js
 
 > Licensed CC BY 3.0  
 > https://creativecommons.org/licenses/by/3.0/
