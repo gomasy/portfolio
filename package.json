@@ -15,7 +15,7 @@
         "@minimal-analytics/ga4": "^1.6.4",
         "@parcel/optimizer-htmlnano": "2.16.4",
         "@parcel/transformer-sass": "2.16.4",
-        "core-js": "^3.48.0",
+        "core-js": "^3.49.0",
         "normalize.css": "^8.0.1",
         "parcel": "^2.0.0",
         "sass": "^1.98.0",
