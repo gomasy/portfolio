@@ -822,9 +822,9 @@
   version "2.8.5"
   resolved "https://registry.yarnpkg.com/@lmdb/lmdb-win32-x64/-/lmdb-win32-x64-2.8.5.tgz#8233e8762440b0f4632c47a09b1b6f23de8b934c"
 
-"@minimal-analytics/ga4@^1.6.4":
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/@minimal-analytics/ga4/-/ga4-1.6.4.tgz#d15e261436b9d56f1265e86ab794c608096267ab"
+"@minimal-analytics/ga4@^1.8.7":
+  version "1.8.7"
+  resolved "https://registry.yarnpkg.com/@minimal-analytics/ga4/-/ga4-1.8.7.tgz#4fee7b6354feb28480fdc8e60993105205e25929"
 
 "@mischnic/json-sourcemap@^0.1.1":
   version "0.1.1"
