@@ -8,14 +8,16 @@
     "htmlnano": {
         "collapseAttributeValues": false
     },
+    "browserslist": [
+        "last 2 versions",
+        "not dead",
+        "not op_mini all"
+    ],
     "devDependencies": {
-        "@babel/core": "^7.29.7",
-        "@babel/preset-env": "^7.29.7",
         "@fortawesome/fontawesome-free": "^7.3.1",
         "@minimal-analytics/ga4": "^1.8.7",
         "@parcel/optimizer-htmlnano": "2.16.4",
         "@parcel/transformer-sass": "2.16.4",
-        "core-js": "^3.49.0",
         "normalize.css": "^8.0.1",
         "parcel": "^2.16.4",
         "sass": "^1.102.0",
