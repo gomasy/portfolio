@@ -14,7 +14,9 @@ body {
 }
 
 i {
-    font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Brands';
+    // family names are versioned ('Font Awesome 7 Free'), so use the variables
+    // Font Awesome declares on :root to survive the next major bump
+    font-family: var(--fa-family-classic), var(--fa-family-brands);
     font-style: normal;
     font-size: 1.2rem;
     margin-right: .3rem;
