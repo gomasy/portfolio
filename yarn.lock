@@ -2166,9 +2166,10 @@ ordered-binary@^1.4.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/ordered-binary/-/ordered-binary-1.6.1.tgz#5ac240ea719d6a0e6d4f0485385d3f9cb1cd4432"
 
-parcel@^2.0.0:
+parcel@^2.16.4:
   version "2.16.4"
   resolved "https://registry.yarnpkg.com/parcel/-/parcel-2.16.4.tgz#a9219e35b97163e4fbee47241d641ed23c48c800"
+  integrity sha512-RQlrqs4ujYNJpTQi+dITqPKNhRWEqpjPd1YBcGp50Wy3FcJHpwu0/iRm7XWz2dKU/Bwp2qCcVYPIeEDYi2uOUw==
   dependencies:
     "@parcel/config-default" "2.16.4"
     "@parcel/core" "2.16.4"
